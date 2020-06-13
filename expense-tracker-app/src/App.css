@@ -1,0 +1,17 @@
+.container{
+    
+    max-width: 600px;
+    border: 1px solid;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.history{
+    width: 500px;
+    border: 1px solid;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}

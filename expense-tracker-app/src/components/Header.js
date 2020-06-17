@@ -3,10 +3,7 @@ import React from "react";
 export const Header = () => {
   return (
     <div>
-      <h1>
-        Expence Tracker <br />
-        by Umair Sadiq
-      </h1>
+      <h2>Expence Tracker by Umair Sadiq</h2>
     </div>
   );
 };

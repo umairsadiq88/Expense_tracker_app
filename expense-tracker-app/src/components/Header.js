@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const Header = () => {
-    return (
-        <div style={{ display: "flex", alignContent: "center", justifyContent: "center" }}>
-            <h2>
-                Expence Tracker
-        </h2>
-        </div>
-    )
-}
-
-export default Header;
+export const Header = () => {
+  return (
+    <div>
+      <h1>
+        Expence Tracker <br />
+        by Umair Sadiq
+      </h1>
+    </div>
+  );
+};

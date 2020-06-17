@@ -1,18 +1,21 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header.js';
-import Balance from './components/Balance';
-import History from './components/History';
+import React from "react";
+import "./App.css";
+
+import { Header } from "./components/Header";
+import { Balance } from "./components/Balance";
+import { Accountsummary } from "./components/Accountsummary";
+import { TransactionHistory } from "./components/TransactionHistory";
 
 function App() {
   return (
-    <div className="container">
-
-
+    <div>
       <Header />
-      <Balance />
-      <History />
 
+      <div className="container">
+        <Balance />
+        <Accountsummary />
+        <TransactionHistory />
+      </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import AppReducer from "./AppReducer";
 
 // Create the initial state
 const initialState = {
-  transactions: [{ id: 1, transactionAmount: 100, description: "umair" }],
+  transactions: [{ id: 1, transactionAmount: 1000, description: "Salary" }],
 };
 
 // Create the Global Context

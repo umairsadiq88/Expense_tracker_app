@@ -7,7 +7,7 @@ import { GlobalContext } from '../context/GlobalState';
 export const AddTransaction = () => {
 
   const [description, setDescription] = useState(''); 
-  const [transactionAmount, setTransactionAmount] =useState('');
+  const [transactionAmount, setTransactionAmount] = useState('');
   
   const { addTransaction } =useContext(GlobalContext);
 
@@ -15,7 +15,7 @@ export const AddTransaction = () => {
     e.preventDefault();
 
     const newTransaction = {
-      id: Math.random(Math.round() *1000), 
+      id: new Date().getTime(), 
       description,
       transactionAmount: +transactionAmount
     }
@@ -47,7 +47,7 @@ export const AddTransaction = () => {
           </label>
           <input
             type="number"
-            placeholder="Enter transaction amount" 
+            id="transactionAmout"
             value={transactionAmount}
             onChange={(e) => setTransactionAmount(e.target.value)}
             placeholder="Dollar Value of Transaction"
